@@ -1,6 +1,6 @@
 package colorcoder;
 
-public enum MinorColour {
+public enum MinorColor {
     BLUE(0),
     ORANGE(1),
     GREEN(2),
@@ -9,14 +9,14 @@ public enum MinorColour {
     
     private int index;
     
-    private MinorColour(int index) {
+    private MinorColor(int index) {
         this.index = index;
     }
     int getIndex() {
         return index;
     }
     public static MinorColour fromIndex(int index) {
-        for(MinorColour color: MinorColour.values()) {
+        for(MinorColor color: MinorColor.values()) {
             if(color.getIndex() == index) {
                 return color;
             }
